@@ -8,8 +8,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import {
+  Icon,
+  Menu,
+  Segment,
+  Sidebar
+} from 'semantic-ui-react'
+import 'semantic-ui-css/semantic.min.css'
 
-import Header from "./header"
+import SEO from "./seo"
+import Navbar from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,21 +33,33 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <SEO title="Home" />
+      <Sidebar.Pushable as={Segment}>
+        <Sidebar
+          as={Menu}
+          icon='labeled'
+          inverted
+          vertical
+          visible
+          width='thin'
+        >
+          <Menu.Item as='a'>
+            Morphling
+          </Menu.Item>
+          <Menu.Item as='a'>
+            Templar Assassin
+          </Menu.Item>
+        </Sidebar>
+
+        <Sidebar.Pusher>
+          <Segment
+            basic
+            style={{ backgroundColor: 'black' }}
+          >
+            {children}
+          </Segment>
+        </Sidebar.Pusher>
+      </Sidebar.Pushable>
     </>
   )
 }
