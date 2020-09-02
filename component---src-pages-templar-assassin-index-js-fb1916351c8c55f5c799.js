@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{kCEo:function(e,t,a){e.exports=a.p+"static/ta-5ac3ff83a973303951ab339917c767fb.png"},rnPG:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),r=a("5XkN"),s=a("Bl7J"),i=a("vrFN"),l=a("kCEo"),o=a.n(l);t.default=function(){return c.a.createElement(s.a,null,c.a.createElement(i.a,{title:"Templar Assassin"}),c.a.createElement("div",{style:{height:"100%"}},c.a.createElement(r.a,{src:o.a})))}}}]);
+//# sourceMappingURL=component---src-pages-templar-assassin-index-js-fb1916351c8c55f5c799.js.map
