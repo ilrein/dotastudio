@@ -1,14 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
+import {
+  Header,
+  Image,
+} from 'semantic-ui-react';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import MorphImg from '../../images/morphling.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Dota Studio" />
+    <SEO title="Morphling" />
     <div style={{ height: '100%' }}>
-      Morphling
+      {/* <Header
+        as="h1"
+        style={{
+          color: 'white',
+        }}
+      >
+        Morphling
+      </Header> */}
+
+      <Image
+        src={MorphImg}
+      />
     </div>
   </Layout>
 )

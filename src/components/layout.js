@@ -43,21 +43,31 @@ const Layout = ({ children }) => {
           visible
           width='thin'
         >
-          <Menu.Item as='a'>
+          <Menu.Item
+            as='a'
+            href="/"
+          >
+            <Icon name="home" />
+            Home
+          </Menu.Item>
+          <Menu.Item
+            as='a'
+            href="/morphling"
+          >
             Morphling
           </Menu.Item>
-          <Menu.Item as='a'>
+          <Menu.Item
+            as='a'
+            href="/templar-assassin"
+          >
             Templar Assassin
           </Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher>
-          <Segment
-            basic
-            style={{ backgroundColor: 'black' }}
-          >
+          <div class="main">
             {children}
-          </Segment>
+          </div>
         </Sidebar.Pusher>
       </Sidebar.Pushable>
     </>

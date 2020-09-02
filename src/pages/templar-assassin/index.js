@@ -1,14 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
+import {
+  Header,
+  Image,
+} from 'semantic-ui-react';
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
+import img from '../../images/ta.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Dota Studio" />
+    <SEO title="Templar Assassin" />
     <div style={{ height: '100%' }}>
-      Templar Assassin
+      <Image
+        src={img}
+      />
     </div>
   </Layout>
 )

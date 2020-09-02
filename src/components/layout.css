@@ -8,3 +8,11 @@ html, body, #___gatsby, #gatsby-focus-wrapper {
   background: black;
   border-radius: 0% !important;
 }
+
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+}
