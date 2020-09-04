@@ -4,12 +4,13 @@ import {
   Image,
 } from 'semantic-ui-react';
 
-import Layout from "@/components/layout"
-import SEO from "@/components/seo"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import MorphImg from '../../images/morphling.png';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Morphling Test" />
+    <SEO title="Morphling" />
     <div style={{ height: '100%' }}>
       <Header
         as="h1"
@@ -17,7 +18,7 @@ const IndexPage = () => (
           color: 'white',
         }}
       >
-        Morphling Test
+        Morphling test
       </Header>
     </div>
   </Layout>
